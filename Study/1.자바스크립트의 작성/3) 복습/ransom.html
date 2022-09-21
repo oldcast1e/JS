@@ -1,0 +1,13 @@
+<h2>JavaScript Math.random() 함수를 사용하여 랜덤 숫자 출력하기 !!</h2>
+
+<p>randomNumber(min, max) 함수에 숫자를 넣어주시고 버튼을 클릭하면 랜덤한 0~9까지의 숫자가 출력됩니다.</p>
+
+<button onclick="document.getElementById('test').innerHTML = randomNumber(0,10)">** 눌러주세요 **</button>
+
+<p id="test"></p>
+
+<script>
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+</script>
