@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-size: 5;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>나이 계산 프로그램</h1>
+    <script>
+        var birthYear = prompt("당신의 출생년도를 입력해주세요.");
+        var currentYear = 2022;
+
+        var age = currentYear - birthYear + 1;
+
+        document.querySelector("#result").innerHTML = "당신의 나이는 " + age + "세 입니다.";
+        // document.write("<b>당신의 나이는 "+age+"</b>입니다.");
+
+    </script>
+</body>
+</html>
