@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        var size = 30;
+        var inp = prompt("팩토리얼을 계산할 숫자를 입력하세요.");
+        var rst = 1,cnt = inp;
+        while(inp > 0){
+            rst *= inp;
+            inp --;
+        }
+        // "<span style='font-size:10px'>10px</span>"
+        // cnt+"!= "+rst
+        document.write ("<span ");
+        document.write ("style='font-size:" + size + "px'>");
+        document.write (cnt+"!= "+rst); // size는 출력되는 글자
+        document.write ("</span>");
+        // document.write("<span style='font-size:10px'>cnt+"!= "+rst</span>");
+    </script>
+
+</body>
+</html>
