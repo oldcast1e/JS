@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var inp  = prompt("숫자를 입력하세요."); 
+        var rst = 0; 
+        for(var i = 1;i<=inp;i++){ 
+            if(i%2 == 1) {continue; }
+            rst += i; 
+        }
+        document.write("<span " + "style='font-size:" + 40 + "px'>" + "짝수의 합은" + rst + " 입니다."+"</span>"); 
+        document.write("<br>");
+        document.write("<span "); 
+        document.write("style='font-size:" + 30 + "px'>"); 
+        document.write("짝수의 합은 "+rst+" 입니다."); 
+        document.write("</span>"); 
+    </script>
+</body>
+</html>
