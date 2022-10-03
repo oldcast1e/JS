@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* font-size: 30px; */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>더하기 프로그램</h2>
+    <script>
+        function add(a,b){
+            var rst = a + b;
+            return rst;
+        }
+        a= parseInt(prompt("더하기 할 첫번째 값을 입력해 주세요."));
+        b= parseInt(prompt("더하기 할 두번째 값을 입력해 주세요."));
+        document.write("<span " + "style='font-size:" + 20 + "px'>" + "계산 결과: "+  add(a,b)+"</span>");
+
+    </script>
+</body>
+</html>
