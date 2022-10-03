@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>함수</title>
+	<!-- <link rel="stylesheet" href="Study/5.함수/10.3/set/add.css">	 -->
+	<!-- CSS 부분 -->
+	<style>
+		button {
+			border:1px solid #ccc;
+			padding:10px 15px;
+			margin:20px auto;
+			font-size:20px;
+		}
+
+		body {
+			text-align: center;
+		}
+	</style>
+
+
+</head>
+<body>
+	<!-- 스크립트 부분 -->
+	<h1>더하기 프로그램</h1>
+	<script>
+		
+		function addNumber() { 		
+			var num1 = parseInt(prompt("첫 번째 숫자를 입력하세요."));
+			var num2 = parseInt(prompt("두 번째 숫자를 입력하세요."));
+			
+			var sum = num1 + num2;
+			// return sum;
+			// document.write("더하기 결과값은 " + sum +"입니다.");
+			alert("더하기 결과값은 " + sum +"입니다.");
+		}
+	</script>
+
+	<button onclick="document.clear() + addNumber()">덧셈 계산하기</button>
+
+	<!-- <script src="Study/5.함수/10.3/set/add-return.js"></script> -->
+	
+</body>
+</html>
