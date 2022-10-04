@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //매개 변수 1개
+        inp = prompt("사용자의 이름을 입력하세요.");
+        let print_fucn = inp => document.write(inp+" 님, 환영합니다.<br>") ;
+        print_fucn(inp);
+
+        // 매개 변수 2개 이상
+        var a = 10,b= 20;
+        add_num = (a,b) => (a+b);
+        document.write("a + b = " + add_num(a,b) +" 입니다.");
+ 
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // 일반 함수 선언
+        function add_org(a,b){
+            var result = a+b;
+            return result;
+        }
+        //익명 함수 선언
+        var add_non = function(a,b){return(a,b);}
+
+        document.write("일반 함수 결과 (10+15): "+add_org(10,15)+"<br>");
+        document.write("일반 함수 결과 (10+15): "+add_non(10,15));
+    </script>
+    
+
+
+</body>
+</html>
