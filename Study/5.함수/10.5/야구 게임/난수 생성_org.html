@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // (1) 0 <= random < 1 : 0과 1사이의 부동소수점 숫자의 랜덤 리턴
+        const rand1 = Math.random();
+        document.write('(1) ' + rand1 + '<br>');
+
+        // (2) 0
+        const rand2 = Math.floor(Math.random());
+        document.write('(2) : ' + rand2 + '<br>');
+
+        // (3) 0 <= random <= 9
+        const rand_0_9 = Math.floor(Math.random() * 10);
+        document.write('(3) : ' + rand_0_9 + '<br>');
+
+        // (4) 0 <= random <= 10
+        const rand_0_10 = Math.floor(Math.random() * 11);
+        document.write('(4) : ' + rand_0_10 + '<br>');
+
+        // (5) 0 <= random <= 99
+        const rand_0_99 = Math.floor(Math.random() * 100);
+        document.write('(5) : ' + rand_0_99 + '<br>');
+
+        // (6) 0 <= random <= 100
+        const rand_0_100 = Math.floor(Math.random() * 101);
+        document.write('(6) : ' + rand_0_100 + '<br>');
+
+        // (7) 1 <= random <= 10
+        const rand_1_10 = Math.floor(Math.random() * 10) + 1;
+        document.write('(7) : ' + rand_1_10 + '<br>');
+
+        // (8) 2 <= random <= 5
+        const rand_2_5 = Math.floor(Math.random() * 4) + 2;
+        document.write('(8) : ' + rand_2_5 + '<br>')
+    </script>
+
+</body>
+</html>

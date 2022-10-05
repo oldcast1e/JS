@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>야구 게임</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>야구 게임</h1>
+    <script>
+        rep = 0,ipt;
+
+        var num1 = Math.floor(Math.random() * 10);
+        var num2 = Math.floor(Math.random() * 10);
+        var num3 = Math.floor(Math.random() * 10);
+
+        var random_number = num1*100 + num2*10 + num3;
+        // document.write(random_number);
+        while(1){
+            if(rep == 0) ipt = parseInt(prompt("첫 번째 값을 입력하세요. "));
+            else ipt = parseInt(prompt("다시 한 번 값을 입력하세요. "));
+
+            if(ipt == random_number) {
+                document.write("정답입니다!");
+                break;
+            }
+            
+        }
+        
+        
+
+    </script>
+
+    
+</body>
+</html>
