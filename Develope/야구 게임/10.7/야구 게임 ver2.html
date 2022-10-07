@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>야구 게임</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>야구 게임</h1>
+    <script>
+
+        function dif_one(N1,N2){
+            while(N1 == N2){ //첫번째 난수와 두번째 난수가 다른 숫자일 때까지 반복
+                N2 = Math.floor(Math.random() * 10);
+            }
+            return N2;
+        }
+
+        function dif_two(N1,N2,N3){
+            while(N3 == N1 || N3 == N2){ //첫번째 난수와 두번째 난수가 다른 숫자일 때까지 반복
+                N3 = Math.floor(Math.random() * 10);
+            }
+            return N3;
+        }
+        
+        /*사용자 입력값*/
+        var ipt_arr = [[0],[0],[0]];
+        var ipt,rep=0;
+
+        /* 랜덤값 */
+        var random_num = [[0],[0],[0]];
+        random_num[0] = Math.floor(Math.random() * 10);
+        random_num[1] = dif_one(random_num[0],random_num[1]);
+        random_num[2] = dif_two(random_num[0],random_num[1],random_num[2]);
+
+        var random_number = num1*100 + num2*10 + num3;
+
+        
+        var strike_cnt = 0, ball_cnt = 0;
+
+        while(1){
+            if(rep == 0) {
+                ipt = parseInt(prompt("첫 번째 값을 입력하세요. "));
+                
+                //사용자가 입력한 값
+                ipt_arr[0] = parseInt(ipt / 100); //123/100 ==> 1
+                ipt_arr[1] = parseInt(ipt/10%10); //123/10 ==> 12 %10 ==>2
+                ipt_arr[2] = parseInt(ipt%10);
+            }   
+            else ipt = parseInt(prompt("다시 한 번 값을 입력하세요. "));
+
+            if(ipt == random_number) {
+                document.write("정답입니다!");
+                break;
+            }
+
+            strike_cnt = 0; ball_cnt=0;
+            for(let i=0;i<3;i++) if(ipt_arr[i]==random_num[i]) strike_cnt ++;
+
+            for(let i=0;i<3;i++){
+                for(let j=0;j<3;j++){
+                    if(i!=j) if(ipt_arr[i]==random_num[i]) ball ++;
+                }
+            }
+            
+
+            
+            
+        }
+        // document.write("입력한 숫자는:"+ipt_arr[0][0]+","+ipt_arr[1][0]+","+ipt_arr[2][0]);
+    
+    </script>
+
+    
+</body>
+</html>
