@@ -39,44 +39,45 @@
 
         /* 랜덤값 */
         var random_num = [[0],[0],[0]];
+        
         random_num[0] = Math.floor(Math.random() * 10);
         random_num[1] = dif_one(random_num[0],random_num[1]);
         random_num[2] = dif_two(random_num[0],random_num[1],random_num[2]);
 
         // var random_number = random_num[0]*100 + random_num[1]*10+ random_num[2];
-        for(let i=0;i<3;i++){
-            document.write((i+1) + " 번째 숫자: "+random_num[i] + "<br>");
-        }
-        document.write("랜덤 숫자: "+random_number+"<br>");
+        // for(let i=0;i<3;i++){
+        //     document.write((i+1) + " 번째 숫자: "+random_num[i] + "<br>");
+        // }
+        // document.write("랜덤 숫자: "+random_number+"<br>");
         //앞자리가 0인 경우 0 추가할 것!
         /*--------------------------------------------------------*/
 
         
-        // var strike_cnt = 0, ball_cnt = 0;
+        var strike_cnt = 0, ball_cnt = 0;
 
-        // /*사용자 입력값 선언*/
-        // var ipt_arr = [[0],[0],[0]],ipt,rep=0;
-        // ipt = parseInt(prompt("첫 번째 값을 입력하세요. "));
+        /*사용자 입력값 선언*/
+        var ipt_arr = [[0],[0],[0]],ipt,rep=0;
+        var ipt = parseInt(prompt("첫 번째 값을 입력하세요. "));
                 
-        // //사용자가 입력한 값 분할
-        // ipt_arr[0] = parseInt(ipt / 100); //123/100 ==> 1
-        // ipt_arr[1] = parseInt(ipt/10%10); //123/10 ==> 12 %10 ==>2
-        // ipt_arr[2] = parseInt(ipt%10)
+        //사용자가 입력한 값 분할
+        ipt_arr[0] = parseInt(ipt / 100); //123/100 ==> 1
+        ipt_arr[1] = parseInt(ipt/10%10); //123/10 ==> 12 %10 ==>2
+        ipt_arr[2] = parseInt(ipt%10)
 
 
-        // strike_cnt = 0; ball_cnt=0;
-        // for(let i=0;i<3;i++) if(ipt_arr[i]==random_num[i]) strike_cnt ++;
+        strike_cnt = 0; ball_cnt=0;
+        for(let i=0;i<3;i++) if(ipt_arr[i]==random_num[i]) strike_cnt ++;
 
-        // for(let i=0;i<3;i++){
-        //     for(let j=0;j<3;j++){
-        //         if(i!=j) if(ipt_arr[i]==random_num[i]) ball ++;
-        //     }
-        // }
-        // document.write("랜덤 숫자: "+random_number+"<br>");
-        // document.write("입력한 숫자:"+ipt_arr[0][0]+","+ipt_arr[1][0]+","+ipt_arr[2][0]+"<br><br>");
+        for(let i=0;i<3;i++){
+            for(let j=0;j<3;j++){
+                if(i!=j) if(ipt_arr[i]==random_num[i]) ball_cnt ++;
+            }
+        }
+        document.write("<br><br>랜덤 숫자: "+random_num[0]+random_num[1]+random_num[2]+"<br>");
+        document.write("입력한 숫자:"+ipt_arr[0]+ipt_arr[1]+ipt_arr[2]+"<br><br>");
 
-        // document.write("Strike!: "+strike_cnt + "<br");
-        // document.write("ball: "+ball);
+        document.write("Strike!: "+strike_cnt + "<br>");
+        document.write("ball: :" + ball_cnt);
     
     </script>
 
