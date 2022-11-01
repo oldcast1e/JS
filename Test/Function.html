@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        var nums = ['1','2','3','4','5'];
+        var chars = ['a','b','c'];
+
+        //concat 함수
+        var rst_concat = nums.concat(chars);
+        document.write("result(concat): "+rst_concat+"<br>");
+
+        //join 함수
+        var rst_join = nums.join("-");
+        document.write("result(join): "+rst_join+"<br>");
+
+        //push 함수
+        var rst_push = nums.push("6");
+        document.write("result(push): "+rst_push+"<br>");
+        ////=> 새 요소가 추가된 후의 배열 요소의 개수를 반환
+
+        //unshift 함수
+        var rst_unshift = nums.unshift("0");
+        document.write("result(unshift): "+rst_unshift+"<br>");
+        ////=> 새 요소가 추가된 후의 배열 요소의 개수를 반환
+        
+        document.write("<br>");
+        document.write("final arr: "+nums+"<br>"+"<br>");
+
+        //pop 함수
+        var cnt1 = nums.pop();
+        document.write("result(pop): "+nums+"<br>");
+        document.write("poped num: "+cnt1+"<br>");
+
+
+        //unshift 함수
+        var cnt2 = nums.shift();
+        document.write("result(shif): "+nums+"<br>");
+        document.write("poped num: "+cnt2+"<br>");
+
+        //splice 함수
+
+        /*
+        (1) 인수 1개: 그 배열 인덱스부터 요소의 끝까지 삭제
+        (2) 인수 2개: 그 배열 인덱스(1)부터 요소의 끝까지 삭제할 개수(2)
+        (3) 인수 3개 이상: 그 배열 인덱스(1)부터 추가할 요소(3)
+        */
+
+        nums.splice(1);
+        document.write("result: "+nums.splice(1)+"<br>");
+
+        nums.splice(1,2);
+        document.write("result: "+nums.splice(1)+"<br>");
+
+        nums.splice(1,2,"four","five","six");
+
+
+    </script>
+
+</body>
+</html>
