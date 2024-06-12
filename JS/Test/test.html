@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>접속경로 오류 페이지|경기도버스정보시스템</title>
+<link rel="stylesheet" type="text/css" href="/css/default.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/css/layout.css" media="all" />
+<script type="text/javascript" src="/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript">
+function requestCall(tel){
+	
+	if (commonOSType == 'A' ||  commonOSType == 'I')	window.location.href = "webtoapp:TEL:"+tel;
+}
+if(typeof(_AMLog) == 'undefined'){function AM_URL_CUR (_URL){if(typeof(_AKC)!='undefined'){var _R_a = _AKC.split(','); 	var _ak2 = ''; var _ak_list = _URL.split('&'); for(var i=0;i<_ak_list.length;i++){ var cnt=0; for(var a=0;a<_R_a.length;a++){if( _ak_list[i].indexOf(_R_a[a]) == 0 )  cnt++;}; if(cnt > 0 )	continue; if( _ak2 != '' ) _ak2 += '&'; 	_ak2 += _ak_list[i]; }; if( _ak2 != '' ){ _URL= _ak2;}; return _URL; }else{return _URL; }; };var _AMLog=[];var AM_Mobile=(function(){var _u={gd:'gbis.loginside.co.kr:'+((location.protocol=='https:')?'443':'8800'),cd:'gbis.go.kr',ud:'m.gbis.go.kr',uid:'7',sv:20130424,st:(30*60),py:1};var _t={u:'unknown',d:'undefined',n:'null',m:'number',um:'undefined_member',re:'!|~| |&|"|<|>|[&=":,./?~!<>@%#$^&*()";]',Lp:'a.tagName=="SPAN"||a.tagName=="IMG"||a.tagName=="B" || a.tagName=="I" || a.tagName== "U" || a.tagName== "FONT" || a.tagName=="STRONG" || a.tagName=="I" || a.tagName=="A" || a.tagName=="AREA"',l:'load',c:'click',j:'javascript:',f:'function'};
+var _f={u:decodeURIComponent,e:encodeURIComponent ,url:String(AM_URL_CUR(document.URL)),ref:document.referrer!=''?document.referrer:'bookmark',ei:function(s,t){return s.indexOf(t);},d:function(s){var r=String(s);return r.toUpperCase();},f:function(o){var a;a=o;if(_f.d(a.tagName)=='A' || _f.d(a.tagName)=='AREA'){return a;}else if(_f.d(a.tagName)=='BODY'){return 0;}else{return _f.f(a.parentNode);}},
+hr:function(u,t){var r=String(u).replace(/http:\/\/|https:\/\//gi, "");var v=1024;var s=r.length;if(s>v){if(t=='u'){r='URLblockade:'+s;}else{r=r.substring(0,v);} }; if(t=='h'){return r.split('/')[0];}; return r;},ea:function(c,f){var wd;if(c=='mousedown'){wd=window.document;}else{wd=window;}if(wd.addEventListener){wd.addEventListener(c,f,false)}else if(wd.attachEvent){wd.attachEvent("on"+c,f)}},rc:function(s){var sr=_f.tg(s+'',_t.re);return sr.substring(0,512);},ua:navigator.userAgent,lg:(typeof(navigator.language)!=_t.d)?navigator.language.toLowerCase():(typeof(navigator.userLanguage)!=_t.d)?navigator.userLanguage.toLowerCase():'',tz:function(){var t=20;t = Math.floor((new Date()).getTimezoneOffset()/60) + 29 ;if( t > 24 ) t = t - 24 ;return t;},tg:function(s,u,o){var us=u;var c='';c=String(s.replace(/<[^<|>]*>/gi, ""));if(typeof(u)!=_t.d){if(typeof(o)!=_t.d){us=u.replace(o,'');} c=eval("c.replace(/" + us + "/g,'')");};return c;},tgc:function(s){return String(s).replace(/[#&^@]/g,'');},
+iN:function(s) {s += '';s = s.replace(/^\s*|\s*$/g, ''); if(s ==''|| isNaN(s)!=false ){ return false;}; return true;},ct:function(o){var a=p=0;var b=c=d='';if((_f.iN(o.qy)!=true)||(o.pn.length==0) ||(o.am.length==0) ||(o.qy.length==0) ||(o.qy=='0')){return 0;};a=o.qy;b=_f.tgc(o.ct);c=_f.tgc(o.pn);d=String(o.am);p=parseInt(d.replace(/[^0-9.]/g, ""));return {pn:c,at:p,ct:b,qy:a};},t:function(){var c=String(Math.random()*1000000000).replace(".",""); var t=Math.floor(new Date().getTime() / 1000); var sr=t+''+c.substr(0,9);return {s:sr,p:sr};},ti:function(a){return parseInt(a.substr(0,10));},uq:function(){var cc=Math.floor(new Date().getTime());var a="";var sr = "";var c="0A1B2C3D4EFGH5IJ6K7L8M9N0OPQURSTUVWXYZ";for(var i = 0;i<6;i++){sr+=c.substr(Math.floor(Math.random()*39),1);}a=cc+sr; return a+'';},
+nm:function(st){ var v = String(st); var r='';for (var i=0; i<v.length; i++) {if(!isNaN(v.charAt(i))){r+=v.charAt(i);};} return (r!=''?r:v);},n:function(s){var str=s+"";var ret="";for(var i = 0; i < str.length; i++){	var at = str.charCodeAt(i);var ch=String. fromCharCode(at);	if(at==10 || at==32||at==35){ret+=''+ch.replace(ch,'');}else if (at==34||at==39){ret+=''+ch.replace(ch,' ');	}else{ret+=''+ch;}  } return ret;},g:function(sr){var r='';var ar='';r=sr.substr(_f.ei(sr,'{'),sr.length);r=r.replace('{','');r=r.replace('}','');return r;},sse:function(p1,p2){var s=_s.cg('AS');var sts='';var q=_f.uq();var c=_s.cg('AU');var r=_s.cg('AR');var sv=s.split("|");var rt=0;var a='';var t=_f.t();var v=0;var cn=2;var cn2=1;var c1=(_f.u(p1).indexOf('&md=b')> -1)?1:0;var g="";var c2=(p2.length>0)?t.s:0;var ct=c.split("|");
+var ts=t.s+'|'+t.p+'|'+t.s+'|'+c2+'|'+_f.rc(_f.ref);if((r==_f.rc(_f.url+_f.ref)) && r!=_t.d){rt=1;};if(s==_t.d){a=ts;_s.cs('AS',ts,0,'/','');re=0;v=1;}else{if(c2!=0&&rt!=1){sv[3]=c2;};if(((_f.ti(t.p)-_f.ti(sv[1]) )-_u.st)>0 ){a=ts;_s.cs('AS',a,0,'/','');_s.cs('AR',"0",0,'/','');rt=0;v=1;}else{if(_s.ri()!=1&&rt!=1&&_f.rc(_f.ref)!=sv[4]&&!(v==0 && _f.ref=="bookmark")){a=sv[0]+'|'+t.p+'|'+t.s+'|'+sv[3]+'|'+_f.rc(_f.ref);}else{ a=sv[0]+'|'+t.p+'|'+sv[2]+'|'+sv[3]+'|'+sv[4];} _s.cs('AS',a,0,'/','');v=0;}}if(v==1){if(c!=_t.d){cn=parseInt(ct[1])+1;if(cn >=10){cn=10;};if(String(ct[4])!=_t.d){q=ct[4];};g=t.s+'|'+cn+'|'+ct[2]+'|'+ct[3]+'|'+q;}else{g=t.s+'|'+cn+'|'+t.s+'|'+cn2+'|'+q;c=t.s+'|0|'+t.s+'|0'+'|'+q;};
+_s.cs('AU',g,(1000*86400*365)*10,'/','');}if(c1==1 && ct[0]!=_t.d && rt!=1){if(String(ct[4])!=_t.d){q=ct[4];};cn2=parseInt(ct[3])+1;g=ct[0]+'|'+ct[1]+'|'+t.s+'|'+cn2+'|'+q;_s.cs('AU',g,(1000*86400*365)*10,'/','');};sts=a.split("|");a=sts[0]+'|'+sts[1]+'|'+sts[2]+'|'+sts[3];return {st:a,vk:v,vt:c,re:rt};},um:function(rs){var rrs=rs+'';var a=0; var u=_u.ud;if(u.indexOf(",")!= -1){u=u.split(',');for(var i = 0;i<u.length;i++){if(rrs==u[i])return 1;}}else{if(rrs==u)a=1;}return a;}};var _s={buy:function(){var s='';var ce='';var g="";if(typeof(AM_Cart)!=_t.d){try{ce=m_buy;}catch(_cc){ce='null'};if(ce!='' && ce=='finish'){var on=AM_Cart;var ot=[];for(var vv in on){if(_f.ct(on[vv])==0){break;}ot=_f.ct(on[vv]);g+=ot.ct+'@'+ot.pn+'@'+ot.at+'@'+ot.qy+'^';}s='&md=b&ll='+_f.e(g);};}return s;},
+e:function(a){var ce=g=s='';var r="";var an=0;try{s=eval(a);if(a=='m_amt'){s=s.replace(/[^0-9.]/g, "");};if(a=='m_pd'){s=_f.tgc(s);};if(a=='m_ct'){s=_f.tgc(s);};}catch(_e){s=''};r=_f.e(s);return r;},ri:function(){var r=String(_f.ref);var a=0;r=_f.hr(r,'r');r=r.split('/');if(_f.um(r[0])==1){a=1;}return a;},ui:_f.um(_f.hr(_f.url,'h')),mi:function(a){var mi=_s.e('m_id');var mj=_s.e('m_jid');var cr='';var ct="";if(mj!="" &&_u.py==1){ cr='&jid='+mj+'&jn='+_s.e('m_jn');}else if(mj!="" &&_u.py==0){cr='&jid='+_t.um+'&jn='+_s.e('m_jn');}if(mi!="" && _u.py==1){ct='&id='+mi;}else if(mi!="" && _u.py==0){ct='&id='+_t.um;} return cr+''+ct;},s:(typeof(screen)!=_t.d)&&(typeof(screen.width)==_t.m)?screen.width+'*'+screen.height:'0*0',c:function(){if(_s.cg('AS')!=_t.d){return 1;}else{return 0;}},
+cd:(typeof(screen)!=_t.d)?((typeof(screen.pixelDepth)!=_u.m)?screen.colorDepth:screen.pixelDepth):_t.d,cs:function(n,v,e,p,d){var ex = new Date();var es='0';if(e!=0){ex.setTime(ex.getTime() + eval(e));es=ex.toGMTString();} var s=n+_u.uid+"="+escape(v)+((e!=0)?";expires="+es:"")+((p)?";path="+p:"")+";domain="+((d)?d+";":_u.cd+";"); document.cookie=s;},cg:function(v){var aq='';var s=v+_u.uid;var ss=0;var se=0;var dc=document.cookie;if (dc.length>0){ss=dc.lastIndexOf(s+ "=");if(ss!=-1){ss=ss + s.length+1;se=dc.indexOf(";",ss);if(se==-1){se=dc.length;};aq=unescape(dc.substring(ss,se));return aq;};}return _t.d;},re:function(){var r=_s.cg('AR');if(_t.d==String(r)){return 0;}else{if(String(r)==_f.rc(_f.url+_f.ref)){return 1;}return 0;}}};var _p={p:location.protocol+'//'+_u.gd,s:'/',lt:function(a,v){var r=''+a;if(r.length>v){ r=r.substring(0,v); }; return r;},
+send:function(w,s){if(_s.ui==1){var x=cng='';var nc=new Image(0,0);var a=_s.buy();var k=_s.e('m_skey');var n=_f.sse(a,k);var vl='&ui='+_s.ui+_s.mi()+'&ag='+_s.e('m_ag')+'&gd='+_s.e('m_gd')+'&skey='+k+'&pd='+_s.e('m_pd')+'&ct='+_s.e('m_ct')+'&amt='+_s.e('m_amt')+''+a+'&mr='+_s.e('m_mr')+'&cd='+_s.cd+'&tz='+_f.tz()+'&lg='+_f.lg;var tms='&sv='+_u.sv+'&st='+n.st+'&vt='+n.vt+'&vk='+n.vk+'&ce='+_s.c();_s.cs('AR',_f.rc(_f.url+_f.ref),0,'/','');if(typeof(w)!=_t.d){if(w=='site'){x='mwg/?mid='+_u.uid+'&tp=site'+tms+'&ri='+_s.ri()+'&re='+n.re+'&dm='+_s.s+'&url='+_f.e(_f.hr(_f.url,'u'))+'&ref='+_f.e(_f.hr(_f.ref,'r'))+''+vl;}else if(w=='link' || w=='tel'){x='mwg/?mid='+_u.uid+'&tp='+w+tms+'&ri='+_s.ri()+'&re='+n.re+'&dm='+_s.s+'&url='+_f.e(_f.hr(_f.url,'u'))+'&ref='+_f.e(_f.hr(s,'r'))+''+vl;}else if(w=='cart'){x='mwg/?mid='+_u.uid+'&tp=cart'+tms+''+s;}};nc.src=_p.lt(_p.p+_p.s+x,2048);_AMLog.push(nc);}}};
+var _c={Run:function(){if(_f.ei(navigator.userAgent,'Chrome/1.') > -1){return 0;};_f.ea('mousedown',this.ec);},ec:function(e){var ok='';var m = document.all ? event.srcElement : e.target;if(typeof(m)==_t.d){return true;} var a=m;if(eval(_t.Lp)){ok=_c.lc(m);if(ok.length != 0){_p.send('link',ok);};}},lc:function(o){try{var ar='',tf=0,obj=o;var a=o;if(eval(_t.Lp)){obj=_f.f(o);if(_f.d(String(obj.href).substr(0,4))=='TEL:'){ar=obj.href;if(ar!=''){_p.send('tel',ar); return '';};};if(typeof obj.onclick==_t.f){tf=1;ar = String(obj.onclick);}else if(typeof obj!=_t.m){tf=0;ar = String(obj.href);};if((_f.d(o.tagName)=='IMG') && (typeof o.onclick == _t.f)){tf=1;ar = String(o.onclick);}}if(ar.length==0){return'';};ar=_f.n(ar);if(_f.ei(ar,'void(') == -1 && _f.ei(ar,'void0') == -1){if(tf==1){ar=_f.g(ar);if(ar==''){return '';};	if(_f.ei(ar,_t.j) == -1){return _t.j + ar;}else{return ar;};}else{return ar;};}else{return _t.j + 'void('+_f.nm(ar)+')';};return '';}catch(_e){ return '';};}};if(_s.ui==1){_c.Run();_p.send('site','');}
+return{vp:function(q){var cu='';if((q!="") && (q.substr(0,1)=="/")){cu=(_f.hr(_f.url,'h') +''+q);_f.url=cu.replace(/\/\//gi, "/");if(_s.ui==1){_p.send('site','');}}},vt:function(ok){if(_f.d(ok.substr(0,4))=='TEL:'){_p.send('tel',ok);}},ap:function(q){var ct1=_s.e('m_ct');var pt1=_s.e('m_pd');var pp=String(_s.e('m_amt'));var qt1=q;var pe=0;if((_f.iN(qt1)==true)&&(typeof(pt1)!=_t.d)&&(pt1.length!=0)){pe=parseInt(pp.replace(/[^0-9.]/g, ""));var at1= ( parseInt(pe) ) * q;var _At ='';_At += ct1+'@'+pt1+'@'+at1+'@'+qt1+'^';_p.send('cart','&md=i&ll='+_f.e(_At));}},
+ac:function(o,p,c,d){var cm='i';var dt =0;var oc=[];var ot=[];var at=0;var _At ='';var m=(d)?d:'';oc=o;for (var i in oc){if(_f.ct(oc[i])==0){continue;}ot=_f.ct(oc[i]);if (arguments.length==1){_At+=ot.ct+'@'+ot.pn+'@'+ot.at+'@'+ot.qy+'^';cm='o';if(_f.e(_At).length > 800 ){_At =_At+'&cmd=on' ;_p.send('cart','&md=o'+_f.e(_At));_At = '' ;};}else{if(p==i){if( ot.qy != c || m!='' ){dt = c - parseInt(ot.qy);at =Math.round((parseInt(ot.at)  / parseInt(ot.qy)));if( dt > 0 ){ cm = 'i' ; }else{ cm = 'o' ;};if(m==''){oc[i].am = at*Math.abs(dt);oc[i].qy = Math.abs(dt);}_At +=ot.ct+'@'+ot.pn+'@'+oc[i].am+'@'+oc[i].qy+'^';if(m=='del'){ cm='o';oc[i].qy='0';}break;}}}}if( _At.length > 0 ){_p.send('cart','&md='+cm+'&ll='+ _f.e(_At));};}};})();function AM_CUD(){return (typeof(AM_Cart)!='undefined')?1:0;};function AM_PRODUCT(qty){if(typeof(qty)!='undefined'){if(AM_CUD()==0){AM_Mobile.ap(qty);}}};
+function AM_INOUT(pl,cnt){if(AM_CUD()==1){AM_Mobile.ac(AM_Cart,pl,cnt);}};function AM_DEL(pl,cnt){if(AM_CUD()==1){AM_Mobile.ac(AM_Cart,pl,cnt,'del');}};function AM_CARTDEL(){if(AM_CUD()==1){AM_Mobile.ac(AM_Cart);}};function AM_TEL(n){if(typeof(n)!='undefined'){AM_Mobile.vt(n);}};function AM_PL(n){if(typeof(n)!='undefined'){AM_Mobile.vp(n);}};}
+</script>
+<!-- AceCounter Mobile Gathering Script End V.3.1.20121114-->  
+ 
+
+
+
+</head>
+<body>
+
+	<input type="hidden" id="osInfoType"   	name="osInfoType"    value="">
+
+	<header>
+		<div class="header">
+			<div class="top_btn_l1" style='position:absolute;left:10px;top:16px;'><a href="javascript:historyBack();"><img src="../images/common/prev_btn.png" class="top_btn"  style="height:23px;" alt="뒤로가기"></a></div>
+			<div class="top_btn_r1" style='position:absolute;right:10px;top:16px;'><a href="javascript:goHome();"><img src="../images/common/home_btn.png" class="top_btn"  style="height:23px;" alt="홈바로가기"></a></div>
+		</div>
+	</header>
+
+	<section id="content-area" class="bg-fff mt_10">
+		<h2 class='hidden-obj'>접속경로 오류</h2>
+		<p class="ml_10 mb_10 lineh-150p text-c">
+			<span class="font-size-16 font-bold">
+			* 접속 경로가 유효하지 않습니다.
+			</span>
+		</p>
+		<p class="ml_10 mb_10 lineh-150p text-c">
+			<span class="font-size-16 font-bold">
+			  <!-- 구)모바일 웹에서 즐겨찾기를 등록하신 경우 재등록해서 사용하시기 바랍니다. -->
+			</span>
+		</p>
+		<a href="javascript:goHome();">
+		<p class="fav-edit-btn">
+			<span class="font-size-18">홈 바로가기</span>
+		</p>
+		</a>
+		
+	</section>
+</body>
+</html>
